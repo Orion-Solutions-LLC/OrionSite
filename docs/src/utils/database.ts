@@ -32,6 +32,8 @@ export async function submitContactForm(data: ContactSubmission): Promise<void> 
   // }
 
   // For now, simulate API call
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  void data; // Will be used when database integration is implemented
   await new Promise((resolve) => setTimeout(resolve, 1000))
 }
 
