@@ -26,6 +26,20 @@ The build will output files to the current directory (docs/), including:
 
 ## GitHub Pages Deployment
 
+### Option 1: Automatic Deployment with GitHub Actions (Recommended)
+
+A GitHub Actions workflow (`.github/workflows/deploy.yml`) is configured to automatically build and deploy on every push to `main` or `master`.
+
+**Setup:**
+1. Push your code to GitHub
+2. Go to repository Settings → Pages
+3. Under "Source", select **"GitHub Actions"** (not "Deploy from a branch")
+4. The workflow will automatically run on every push and deploy your site
+
+**Manual trigger:** You can also manually trigger the workflow from the Actions tab → "Deploy to GitHub Pages" → "Run workflow"
+
+### Option 2: Manual Build and Deploy
+
 1. Build the project: `npm run build`
 2. Commit the built files (index.html, assets/, 404.html, .nojekyll)
 3. In GitHub repository settings → Pages:
