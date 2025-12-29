@@ -42,9 +42,9 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left Column - Contact Form */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Send Us a Message</h1>
-            <p className="text-gray-400 mb-8">
-              Fill out the form and we'll respond within 24 hours
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Start a Conversation</h1>
+            <p className="text-gray-400 mb-8 text-lg">
+              Let's discuss your project. No sales pitches, no pressure—just clarity about what you need and whether we're the right fit.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -129,9 +129,9 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:cursor-not-allowed text-white font-semibold rounded transition-colors"
+                className="w-full px-8 py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:cursor-not-allowed text-white font-medium rounded transition-colors"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Sending...' : 'Start a Conversation'}
               </button>
 
               {submitStatus === 'success' && (
@@ -196,13 +196,25 @@ const Contact = () => {
             </div>
 
             {/* Why Choose Orion */}
-            <div className="bg-gradient-to-br from-blue-600/20 to-blue-800/30 rounded-lg p-8 border border-blue-500/30">
-              <h3 className="text-2xl font-bold mb-4">Why Choose Orion?</h3>
+            <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-4 text-white">Why Choose Orion?</h3>
               <ul className="space-y-3 text-gray-300">
-                <li>• Proven track record with complex projects</li>
-                <li>• Local Baltimore team with global expertise</li>
-                <li>• End-to-end solutions from concept to deployment</li>
-                <li>• Ongoing support and maintenance</li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">•</span>
+                  <span>Production-grade systems, not demos</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">•</span>
+                  <span>Long-term partnerships, not one-off projects</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">•</span>
+                  <span>Clear code and documentation</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-400 mt-1">•</span>
+                  <span>Baltimore-based with national capability</span>
+                </li>
               </ul>
             </div>
           </div>

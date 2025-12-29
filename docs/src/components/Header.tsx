@@ -10,8 +10,10 @@ const Header = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/our-work', label: 'Our Work' },
-    { path: '/meet-us', label: 'Meet Us' },
+    { path: '/what-we-do', label: 'What We Do' },
+    { path: '/work', label: 'Work' },
+    { path: '/how-we-work', label: 'How We Work' },
+    { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
   ]
 
@@ -19,8 +21,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-sm border-b border-slate-800">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-bold text-white">
-            ORION
+          <Link to="/" className="text-xl font-semibold text-white tracking-tight">
+            Orion LLC
           </Link>
 
           {/* Desktop Navigation */}
